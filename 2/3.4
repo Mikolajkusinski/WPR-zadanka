@@ -1,0 +1,25 @@
+<?php
+ $n = 1619;
+ $licz = 0;
+    if ($n < 1) {
+        echo "liczba musi być wieksz niz 0.";
+    } elseif ($n == 1) {
+        echo "Liczba 1 nie jest ani pierwsza, ani złożona.";
+    } else {
+        $pierwsza = True;
+    for ($i = 2; $i < $n; $i++) {
+        if ($pierwsza) {
+            if ($n % $i == 0) {
+              $pierwsza = False;
+				}
+				$licz++;	
+			}
+		}
+		
+    }
+    if ($pierwsza) {
+        print "Liczba $n jest pierwsza i wszystkie literacje petli wynosza $licz.";
+    } else {
+        echo "Liczba $n nie jest pierwsza.";
+    }
+?>

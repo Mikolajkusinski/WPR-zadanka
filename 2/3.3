@@ -1,0 +1,26 @@
+<?php
+$x = 10;
+$licz = 1;
+$licz2 = 1;
+$tablica[$x][$x];
+for($i = 0;$i<$x;$i++){
+	$tablica[$i][0] = $licz;
+	$licz++;
+}
+for($j = 0;$j<$x;$j++){
+	$tablica[0][$j] = $licz2;
+	$licz2++;
+}
+for($i = 0;$i<$x;$i++){
+	for($j = 0;$j<$x;$j++){
+		$tablica[$i][$j] = $tablica[$i][0]*$tablica[0][$j];
+	}
+}
+for($i = 0;$i<$x;$i++){
+	for($j = 0;$j<$x;$j++){
+		echo $tablica[$i][$j];
+		echo "\t";
+	}
+	echo "<br>";
+}
+?>

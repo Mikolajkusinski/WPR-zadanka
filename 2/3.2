@@ -1,0 +1,12 @@
+<?php
+$rzuty = array();
+for($i = 0;$i<=10;$i++){
+	$kostka = rand(1,6);
+	$rzuty[$i] = $kostka;
+}
+$dl = count($rzuty);
+for($i = 0;$i<=$dl;$i++){
+	echo "\t"."|";
+	echo $rzuty[$i];
+}
+?>

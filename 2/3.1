@@ -1,0 +1,33 @@
+<?php
+$los_licz[0] = 23;
+$los_licz[1] =43;
+$los_licz[2] =126;
+$los_licz[3] = 1;
+$los_licz[4] = 4679;
+$licz = 0;
+$i = 0;
+$dl = count($los_licz);
+for($i =0;$i<$dl;$i++){
+	if($licz<$los_licz[$i]){
+		$licz = $los_licz[$i];
+	}
+}
+while($i<$dl){
+	if($licz<$los_licz[$i]){
+		$licz = $los_licz[$i];
+	}
+	$i++;
+}
+do{
+	if($licz<$los_licz[$i]){
+		$licz = $los_licz[$i];
+	}
+	$i++;
+}while($i<$dl
+foreach($los_licz as $los_licz){
+	if($licz<$los_licz){
+		$licz = $los_licz;
+	}
+}
+echo $licz;
+?>
